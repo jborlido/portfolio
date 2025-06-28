@@ -673,6 +673,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center; /* Ensure images are centered */
   display: block;
 }
 
@@ -879,6 +880,11 @@ a {
     height: 300px;
   }
 
+  /* Improve hero section tablet spacing */
+  .hero {
+    padding: 4rem 1rem 2rem;
+  }
+
   /* Improve carousel mobile spacing */
   .project-hero {
     padding: 6rem 1rem 3rem;
@@ -906,11 +912,11 @@ a {
 
   /* Improve hero section mobile spacing */
   .hero {
-    padding: 2rem 1rem;
+    padding: 5rem 1rem 2rem; /* Increased top padding to prevent navbar overlap */
   }
 
   .hero-content {
-    padding: 2rem 0;
+    padding: 3rem 0; /* Increased top padding for better spacing */
   }
 
   /* Better mobile navigation */
