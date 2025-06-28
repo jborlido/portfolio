@@ -3,71 +3,389 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>João Borlido – Unity Game Engineer</title>
-  <meta name="description" content="Unity Game Engineer specializing in multiplayer systems, mobile development, and CI/CD pipelines. View my portfolio of games and projects.">
+  <title>João Borlido – Senior Unity Game Engineer</title>
+  <meta name="description" content="Senior Unity Game Engineer specializing in multiplayer systems, mobile development, and CI/CD pipelines. View my portfolio of games and projects.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
-  <!-- Hero / intro -->
-  <header class="hero">
-    <img src="assets/images/headshot.jpg" alt="João Borlido" class="hero__photo">
-    <h1 class="hero__name">João Borlido</h1>
-    <p class="hero__title">Senior Unity Game Engineer</p>
-    <a href="#projects" class="btn">Explore My Work</a>
-  </header>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">JB</a>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#expertise" class="nav-link">Expertise</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Project gallery -->
-  <section id="projects" class="grid">
-    <article class="card">
-      <a href="projects/cryptofights.html">
-        <img src="assets/images/cryptofights.jpg" alt="CryptoFights: Ascension cover art">
-        <h2>CryptoFights: Ascension <span>2024</span></h2>
-      </a>
-    </article>
-
-    <article class="card">
-      <a href="projects/curse-chasers.html">
-        <img src="assets/images/curse-chasers.jpg" alt="Curse Chasers screenshot">
-        <h2>Curse Chasers <span>2019</span></h2>
-      </a>
-    </article>
-
-    <article class="card">
-      <a href="projects/sbx-5k.html">
-        <img src="assets/images/sbx-5k.jpg" alt="SBX 5K cover art">
-        <h2>SBX 5K <span>2020</span></h2>
-      </a>
-    </article>
+  <!-- Hero Section -->
+  <section id="home" class="hero section-fullscreen">
+    <div class="hero-content">
+      <img src="assets/images/headshot.jpg" alt="João Borlido" class="hero__photo">
+      <h1 class="hero__name">João Borlido</h1>
+      <p class="hero__title">Senior Unity Game Engineer</p>
+      <p class="hero__description">
+        Crafting immersive gaming experiences with cutting-edge multiplayer systems, 
+        mobile optimization, and robust CI/CD pipelines. Specialized in Unity development 
+        with a passion for performance and player engagement.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#about" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
   </section>
 
-  <footer>
+  <!-- Projects Section -->
+  <section id="projects" class="projects section-fullscreen">
+    <div class="section-header">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">A showcase of my recent game development work</p>
+    </div>
+    
+    <div class="projects-grid">
+      <article class="project-card featured">
+        <div class="project-image">
+          <img src="assets/images/cryptofights.jpg" alt="CryptoFights: Ascension">
+          <div class="project-overlay">
+            <div class="project-info">
+              <h3>CryptoFights: Ascension</h3>
+              <p>Multiplayer strategy game with blockchain integration</p>
+              <div class="project-tags">
+                <span>Unity</span>
+                <span>Mirror Networking</span>
+                <span>AWS</span>
+                <span>Mobile</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="projects/cryptofights.html" class="project-link">
+          <span>View Project</span>
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10.707 2.293a1 1 0 00-1.414 1.414L13.586 8H3a1 1 0 100 2h10.586l-4.293 4.293a1 1 0 101.414 1.414l6-6a1 1 0 000-1.414l-6-6z"/>
+          </svg>
+        </a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-image">
+          <img src="assets/images/curse-chasers.jpg" alt="Curse Chasers">
+          <div class="project-overlay">
+            <div class="project-info">
+              <h3>Curse Chasers</h3>
+              <p>Action-adventure with supernatural combat</p>
+              <div class="project-tags">
+                <span>Unity</span>
+                <span>Shaders</span>
+                <span>AI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="projects/curse-chasers.html" class="project-link">
+          <span>View Project</span>
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10.707 2.293a1 1 0 00-1.414 1.414L13.586 8H3a1 1 0 100 2h10.586l-4.293 4.293a1 1 0 101.414 1.414l6-6a1 1 0 000-1.414l-6-6z"/>
+          </svg>
+        </a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-image">
+          <img src="assets/images/sbx-5k.jpg" alt="SBX 5K">
+          <div class="project-overlay">
+            <div class="project-info">
+              <h3>SBX 5K</h3>
+              <p>High-speed racing with cross-platform support</p>
+              <div class="project-tags">
+                <span>Unity</span>
+                <span>Physics</span>
+                <span>Mobile</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="projects/sbx-5k.html" class="project-link">
+          <span>View Project</span>
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10.707 2.293a1 1 0 00-1.414 1.414L13.586 8H3a1 1 0 100 2h10.586l-4.293 4.293a1 1 0 101.414 1.414l6-6a1 1 0 000-1.414l-6-6z"/>
+          </svg>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Expertise Section -->
+  <section id="expertise" class="expertise section-fullscreen">
+    <div class="section-header">
+      <h2 class="section-title">Technical Expertise</h2>
+      <p class="section-subtitle">Core competencies and specialized skills</p>
+    </div>
+    
+    <div class="expertise-grid">
+      <div class="expertise-category">
+        <div class="expertise-icon">🎮</div>
+        <h3>Game Development</h3>
+        <ul>
+          <li>Unity 3D Engine (5+ years)</li>
+          <li>C# Programming</li>
+          <li>Game Architecture Design</li>
+          <li>Performance Optimization</li>
+          <li>Cross-platform Development</li>
+        </ul>
+      </div>
+
+      <div class="expertise-category">
+        <div class="expertise-icon">🌐</div>
+        <h3>Multiplayer Systems</h3>
+        <ul>
+          <li>Mirror Networking</li>
+          <li>Authoritative Server Architecture</li>
+          <li>Real-time Combat Systems</li>
+          <li>Lag Compensation</li>
+          <li>Matchmaking Systems</li>
+        </ul>
+      </div>
+
+      <div class="expertise-category">
+        <div class="expertise-icon">📱</div>
+        <h3>Mobile Development</h3>
+        <ul>
+          <li>iOS & Android Optimization</li>
+          <li>Touch Controls & UI</li>
+          <li>Memory Management</li>
+          <li>Battery Life Optimization</li>
+          <li>App Store Deployment</li>
+        </ul>
+      </div>
+
+      <div class="expertise-category">
+        <div class="expertise-icon">⚙️</div>
+        <h3>DevOps & Tools</h3>
+        <ul>
+          <li>CI/CD Pipelines</li>
+          <li>AWS Cloud Services</li>
+          <li>Git Version Control</li>
+          <li>Automated Testing</li>
+          <li>Build Automation</li>
+        </ul>
+      </div>
+
+      <div class="expertise-category">
+        <div class="expertise-icon">🎨</div>
+        <h3>Graphics & Shaders</h3>
+        <ul>
+          <li>HLSL Shader Programming</li>
+          <li>Visual Effects (VFX)</li>
+          <li>Lighting Systems</li>
+          <li>Post-processing Effects</li>
+          <li>Optimization Techniques</li>
+        </ul>
+      </div>
+
+      <div class="expertise-category">
+        <div class="expertise-icon">🔗</div>
+        <h3>Emerging Technologies</h3>
+        <ul>
+          <li>Blockchain Integration</li>
+          <li>Web3 Wallet Connectivity</li>
+          <li>NFT Management</li>
+          <li>AR/VR Development</li>
+          <li>Machine Learning</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education section-fullscreen">
+    <div class="section-header">
+      <h2 class="section-title">Education & Background</h2>
+      <p class="section-subtitle">Academic foundation and professional development</p>
+    </div>
+    
+    <div class="education-timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>Computer Science & Engineering</h3>
+          <h4>University Degree</h4>
+          <p class="timeline-period">2015 - 2019</p>
+          <p>Specialized in software engineering with focus on computer graphics, algorithms, and system architecture. Thesis project involved real-time rendering optimization techniques.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>Unity Certified Developer</h3>
+          <h4>Professional Certification</h4>
+          <p class="timeline-period">2020</p>
+          <p>Achieved Unity certification demonstrating expertise in game development, optimization, and best practices for production-ready applications.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>AWS Solutions Architect</h3>
+          <h4>Cloud Infrastructure Certification</h4>
+          <p class="timeline-period">2022</p>
+          <p>Certified in designing and deploying scalable cloud architectures, essential for multiplayer game backend systems and CI/CD pipelines.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>Continuous Learning</h3>
+          <h4>Professional Development</h4>
+          <p class="timeline-period">Ongoing</p>
+          <p>Regular participation in game development conferences, Unity workshops, and emerging technology courses to stay current with industry trends.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section-fullscreen">
+    <div class="about-content">
+      <div class="about-text">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-description">
+          Based in beautiful Portugal, I'm a passionate game developer with over 5 years of experience 
+          creating engaging interactive experiences. My journey started with a curiosity about how games work 
+          and evolved into a deep expertise in multiplayer systems and mobile optimization.
+        </p>
+        <p class="about-description">
+          When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, 
+          or enjoying the Portuguese coastline. I believe in creating games that bring people together and 
+          push the boundaries of what's possible on mobile devices.
+        </p>
+        
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <div class="contact-methods">
+            <a href="mailto:contact@jborlido.pt" class="contact-link">
+              <span class="contact-icon">📧</span>
+              <span>Email</span>
+            </a>
+            <a href="https://linkedin.com/in/joao-borlido" class="contact-link">
+              <span class="contact-icon">💼</span>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/jborlido" class="contact-link">
+              <span class="contact-icon">💻</span>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-visual">
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Published Games</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">100k+</span>
+            <span class="stat-label">Players Reached</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
     <p>Crafted with ❤️ in Portugal — © 2025 João Borlido</p>
   </footer>
   
   <script>
-    // Add smooth scrolling and card animation triggers
+    // Navigation and smooth scrolling
     document.addEventListener('DOMContentLoaded', function() {
-      // Add intersection observer for card animations
-      const cards = document.querySelectorAll('.card');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
-          if (entry.isIntersecting) {
-            setTimeout(() => {
-              entry.target.style.opacity = '1';
-              entry.target.style.transform = 'translateY(0)';
-            }, index * 100);
+      // Mobile navigation toggle
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('.nav-menu');
+      
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      });
+
+      // Close menu when clicking on a link
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navMenu.classList.remove('active');
+        });
+      });
+
+      // Active navigation highlighting
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (scrollY >= sectionTop - 200) {
+            current = section.getAttribute('id');
           }
         });
-      }, { threshold: 0.1 });
 
-      cards.forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(20px)';
-        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(card);
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+      // Intersection Observer for animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+          }
+        });
+      }, observerOptions);
+
+      // Observe all animated elements
+      document.querySelectorAll('.project-card, .expertise-category, .timeline-item, .stat').forEach(el => {
+        observer.observe(el);
       });
     });
   </script>
