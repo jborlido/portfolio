@@ -280,7 +280,7 @@ a {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   max-width: 1200px;
   width: 100%;
@@ -296,6 +296,7 @@ a {
   position: relative;
   opacity: 0;
   transform: translateY(30px);
+  height: 400px; /* Fixed height for all cards */
 }
 
 .project-card.animate-in {
@@ -303,8 +304,9 @@ a {
   transform: translateY(0);
 }
 
+/* Remove the featured card special styling */
 .project-card.featured {
-  grid-row: span 2;
+  grid-row: span 1; /* Changed from span 2 */
 }
 
 .project-card:hover {
@@ -315,11 +317,12 @@ a {
 .project-image {
   position: relative;
   overflow: hidden;
-  height: 300px;
+  height: 250px; /* Fixed height for all project images */
 }
 
+/* Remove the special height for featured cards */
 .project-card.featured .project-image {
-  height: 400px;
+  height: 250px; /* Same as regular cards */
 }
 
 .project-image img {
@@ -631,6 +634,147 @@ a {
   background: var(--bg-secondary);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   color: var(--text-secondary);
+}
+
+/* Media Carousel for Project Pages */
+.media-carousel {
+  position: relative;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto 2rem;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Fixed height for consistency */
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-item .video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 0; /* Override the default padding */
+}
+
+.carousel-item .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Carousel Navigation */
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-nav:hover {
+  background: rgba(102, 126, 234, 0.8);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-nav.prev {
+  left: 1rem;
+}
+
+.carousel-nav.next {
+  right: 1rem;
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.carousel-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.carousel-indicator.active {
+  background: white;
+}
+
+.carousel-indicator:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Hide navigation on single item */
+.media-carousel[data-items="1"] .carousel-nav,
+.media-carousel[data-items="1"] .carousel-indicators {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 300px;
+  }
+  
+  .carousel-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+  
+  .carousel-nav.prev {
+    left: 0.5rem;
+  }
+  
+  .carousel-nav.next {
+    right: 0.5rem;
+  }
 }
 
 /* Mobile Responsive */

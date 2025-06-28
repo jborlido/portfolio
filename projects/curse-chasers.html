@@ -8,14 +8,45 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/carousel.js"></script>
 </head>
 <body>
-  <nav><a href="../index.html">← Back to portfolio</a></nav>
+  <!-- Navigation will be inserted by navigation.js -->
 
   <header class="project-hero">
-    <img src="../assets/images/curse-chasers.jpg" alt="Curse Chasers gameplay screenshot">
+    <div class="media-carousel" data-items="4">
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="carousel-item">
+            <img src="../assets/images/curse-chasers.png" alt="Curse Chasers gameplay screenshot 1">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/curse-chasers.jpg" alt="Curse Chasers gameplay screenshot 2">
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/curse-chasers.png" alt="Curse Chasers concept art">
+          </div>
+        </div>
+        
+        <button class="carousel-nav prev" onclick="moveCarousel(-1)">❮</button>
+        <button class="carousel-nav next" onclick="moveCarousel(1)">❯</button>
+        
+        <div class="carousel-indicators">
+          <span class="carousel-indicator active" onclick="currentSlide(1)"></span>
+          <span class="carousel-indicator" onclick="currentSlide(2)"></span>
+          <span class="carousel-indicator" onclick="currentSlide(3)"></span>
+          <span class="carousel-indicator" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+    </div>
     <h1>Curse Chasers</h1>
-    <p class="project-meta">Independent Project · 2019 · PC · Action-Adventure</p>
+    <p class="project-meta">Independent Project · 2019 · Google Play · App Store · Turn-Based Strategy</p>
   </header>
 
   <main class="project-body">
@@ -23,23 +54,21 @@
     <p>Curse Chasers is an action-adventure game that combines fast-paced combat with exploration mechanics. Players navigate through mysterious environments while battling supernatural enemies and uncovering ancient secrets.</p>
 
     <h2>My Role</h2>
-    <p>Solo developer responsible for all aspects of game development including gameplay programming, level design, character controller implementation, and visual effects systems in Unity.</p>
+    <p>Solo developer responsible for all aspects of game development including gameplay programming, backend (matchmaking and battle communication) and performance optimizations.</p>
 
     <h2>Key Features</h2>
     <ul>
-      <li>Fluid character movement and combat system</li>
-      <li>Dynamic lighting and atmospheric effects</li>
+      <li>Turn-based multiplayer/PVE combat</li>
+      <li>Tile board character movement</li>
       <li>Procedural enemy AI behavior</li>
-      <li>Custom shader work for mystical visual effects</li>
-      <li>Modular level design system</li>
+      <li>Contextual UI for in-game instructions</li>
     </ul>
 
     <h2>Technical Highlights</h2>
     <ul>
-      <li>Custom character controller with wall-running mechanics</li>
-      <li>State machine-based AI for multiple enemy types</li>
-      <li>Shader programming for ethereal visual effects</li>
-      <li>Performance optimization for complex particle systems</li>
+      <li>Custom server for processing matchmaking and battles</li>
+      <li>State machine-based AI for PVE enemies</li>
+      <li>Performance optimization for wide range of devices</li>
     </ul>
 
     <h2>Development Insights</h2>
@@ -49,5 +78,7 @@
   <footer>
     <a href="../index.html">← Back to portfolio</a>
   </footer>
+
+  <!-- Carousel and navigation functionality handled by imported modules -->
 </body>
 </html>

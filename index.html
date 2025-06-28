@@ -9,26 +9,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css" />
+  <script src="assets/js/navigation.js"></script>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="#home" class="nav-logo">JB</a>
-      <ul class="nav-menu">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#expertise" class="nav-link">Expertise</a></li>
-        <li><a href="#education" class="nav-link">Education</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-      </ul>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </nav>
+  <!-- Navigation will be inserted by navigation.js -->
 
   <!-- Hero Section -->
   <section id="home" class="hero section-fullscreen">
@@ -69,8 +53,9 @@
               <p>Multiplayer strategy game with blockchain integration</p>
               <div class="project-tags">
                 <span>Unity</span>
-                <span>Mirror Networking</span>
-                <span>AWS</span>
+                <span>Authoritative Server Architecture</span>
+                <span>Turn Based</span>
+                <span>Matchmaking</span>
                 <span>Mobile</span>
               </div>
             </div>
@@ -86,7 +71,7 @@
 
       <article class="project-card">
         <div class="project-image">
-          <img src="assets/images/curse-chasers.jpg" alt="Curse Chasers">
+          <img src="assets/images/curse-chasers.png" alt="Curse Chasers">
           <div class="project-overlay">
             <div class="project-info">
               <h3>Curse Chasers</h3>
@@ -113,11 +98,13 @@
           <div class="project-overlay">
             <div class="project-info">
               <h3>SBX 5K</h3>
-              <p>High-speed racing with cross-platform support</p>
+              <p>Fast paced quake like FPS</p>
               <div class="project-tags">
                 <span>Unity</span>
                 <span>Physics</span>
-                <span>Mobile</span>
+                <span>Matchmaking</span>
+                <span>Real-time Multiplayer</span>
+                <span>PC</span>
               </div>
             </div>
           </div>
@@ -156,10 +143,10 @@
         <div class="expertise-icon">🌐</div>
         <h3>Multiplayer Systems</h3>
         <ul>
-          <li>Mirror Networking</li>
+          <li>Serverless Architecture</li>
           <li>Authoritative Server Architecture</li>
-          <li>Real-time Combat Systems</li>
-          <li>Lag Compensation</li>
+          <li>Real-time & Turn Based Combat Systems</li>
+          <li>Playfab & Photon</li>
           <li>Matchmaking Systems</li>
         </ul>
       </div>
@@ -181,7 +168,7 @@
         <h3>DevOps & Tools</h3>
         <ul>
           <li>CI/CD Pipelines</li>
-          <li>AWS Cloud Services</li>
+          <li>AWS Cloud & Azure Services</li>
           <li>Git Version Control</li>
           <li>Automated Testing</li>
           <li>Build Automation</li>
@@ -192,7 +179,6 @@
         <div class="expertise-icon">🎨</div>
         <h3>Graphics & Shaders</h3>
         <ul>
-          <li>HLSL Shader Programming</li>
           <li>Visual Effects (VFX)</li>
           <li>Lighting Systems</li>
           <li>Post-processing Effects</li>
@@ -204,11 +190,11 @@
         <div class="expertise-icon">🔗</div>
         <h3>Emerging Technologies</h3>
         <ul>
-          <li>Blockchain Integration</li>
-          <li>Web3 Wallet Connectivity</li>
-          <li>NFT Management</li>
           <li>AR/VR Development</li>
           <li>Machine Learning</li>
+          <li>Computer Vision</li>
+          <li>LLMs</li>
+          <li>MCP Servers & Agentic AI</li>
         </ul>
       </div>
     </div>
@@ -222,45 +208,52 @@
     </div>
     
     <div class="education-timeline">
+    <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>MSc - Computer Engineering</h3>
+          <p class="timeline-period">2024 - Present</p>
+          <p>Special interests in Software Engineering, Artificial Intelligence, Machine Learning, Computer Vision and VR/AR/XR.</p>
+        </div>
+      </div>
+
       <div class="timeline-item">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h3>Computer Science & Engineering</h3>
-          <h4>University Degree</h4>
+          <h3>Co-Founder & Head of Product - Xarp Reality Labs</h3>
+          <p class="timeline-period">2023 - Present</p>
+          <p>Co-founded an XR startup that landed 250K R&D funding.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>Senior Unity C# Developer - FYX Gaming</h3>
+          <p class="timeline-period">2019 - 2024</p>
+          <p>Worked as part of a team of Unity Developers responsible for the release of a FPS video game to Steam.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>Co-Founder - Shadowmatic Labs</h3>
+          <p class="timeline-period">2018</p>
+          <p>Worked as part of a team of Unity Developers responsible for the release of a FPS video game to Steam.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>BSc - Computer Graphics and Multimedia Engineering</h3>
           <p class="timeline-period">2015 - 2019</p>
-          <p>Specialized in software engineering with focus on computer graphics, algorithms, and system architecture. Thesis project involved real-time rendering optimization techniques.</p>
+          <p>Special interests in Video Game Development, Software Engineering and Computer Graphics.</p>
         </div>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <h3>Unity Certified Developer</h3>
-          <h4>Professional Certification</h4>
-          <p class="timeline-period">2020</p>
-          <p>Achieved Unity certification demonstrating expertise in game development, optimization, and best practices for production-ready applications.</p>
-        </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <h3>AWS Solutions Architect</h3>
-          <h4>Cloud Infrastructure Certification</h4>
-          <p class="timeline-period">2022</p>
-          <p>Certified in designing and deploying scalable cloud architectures, essential for multiplayer game backend systems and CI/CD pipelines.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <h3>Continuous Learning</h3>
-          <h4>Professional Development</h4>
-          <p class="timeline-period">Ongoing</p>
-          <p>Regular participation in game development conferences, Unity workshops, and emerging technology courses to stay current with industry trends.</p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -328,47 +321,8 @@
   </footer>
   
   <script>
-    // Navigation and smooth scrolling
+    // Main page specific functionality
     document.addEventListener('DOMContentLoaded', function() {
-      // Mobile navigation toggle
-      const hamburger = document.querySelector('.hamburger');
-      const navMenu = document.querySelector('.nav-menu');
-      
-      hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-      });
-
-      // Close menu when clicking on a link
-      document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-          hamburger.classList.remove('active');
-          navMenu.classList.remove('active');
-        });
-      });
-
-      // Active navigation highlighting
-      const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('.nav-link');
-
-      window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-          if (scrollY >= sectionTop - 200) {
-            current = section.getAttribute('id');
-          }
-        });
-
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === `#${current}`) {
-            link.classList.add('active');
-          }
-        });
-      });
-
       // Intersection Observer for animations
       const observerOptions = {
         threshold: 0.1,
