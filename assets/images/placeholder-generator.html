@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Image Placeholder Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .generator { margin: 20px 0; }
+        canvas { border: 1px solid #ccc; margin: 10px 0; }
+        button { padding: 10px 20px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Generate Placeholder Images for Portfolio</h1>
+    <p>This will generate placeholder images for your missing project images.</p>
+    
+    <div class="generator">
+        <h3>CryptoFights: Ascension</h3>
+        <canvas id="crypto-canvas" width="600" height="400"></canvas>
+        <br>
+        <button onclick="generateCrypto()">Generate</button>
+        <button onclick="downloadImage('crypto-canvas', 'crypto-fights.jpg')">Download</button>
+    </div>
+    
+    <div class="generator">
+        <h3>Curse Chasers</h3>
+        <canvas id="curse-canvas" width="600" height="400"></canvas>
+        <br>
+        <button onclick="generateCurse()">Generate</button>
+        <button onclick="downloadImage('curse-canvas', 'curse-chasers.jpg')">Download</button>
+    </div>
+    
+    <div class="generator">
+        <h3>SBX 5K</h3>
+        <canvas id="sbx-canvas" width="600" height="400"></canvas>
+        <br>
+        <button onclick="generateSBX()">Generate</button>
+        <button onclick="downloadImage('sbx-canvas', 'sbx-5k.jpg')">Download</button>
+    </div>
+
+    <script>
+        function generateCrypto() {
+            const canvas = document.getElementById('crypto-canvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Background gradient
+            const gradient = ctx.createLinearGradient(0, 0, 600, 400);
+            gradient.addColorStop(0, '#667eea');
+            gradient.addColorStop(1, '#764ba2');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 600, 400);
+            
+            // Add some geometric shapes
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.fillRect(50, 50, 100, 100);
+            ctx.fillRect(450, 250, 100, 100);
+            
+            // Title
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 48px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('CRYPTOFIGHTS', 300, 180);
+            ctx.font = '32px Arial';
+            ctx.fillText('ASCENSION', 300, 220);
+            
+            // Subtitle
+            ctx.font = '16px Arial';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+            ctx.fillText('Multiplayer Strategy Game', 300, 260);
+        }
+        
+        function generateCurse() {
+            const canvas = document.getElementById('curse-canvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Dark background with purple accent
+            const gradient = ctx.createLinearGradient(0, 0, 600, 400);
+            gradient.addColorStop(0, '#2d1b69');
+            gradient.addColorStop(1, '#11998e');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 600, 400);
+            
+            // Add mysterious shapes
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.05)';
+            for(let i = 0; i < 20; i++) {
+                ctx.beginPath();
+                ctx.arc(Math.random() * 600, Math.random() * 400, Math.random() * 30, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            
+            // Title
+            ctx.fillStyle = '#00ff88';
+            ctx.font = 'bold 42px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('CURSE', 300, 180);
+            ctx.fillStyle = 'white';
+            ctx.fillText('CHASERS', 300, 230);
+            
+            // Subtitle
+            ctx.font = '16px Arial';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+            ctx.fillText('Action Adventure Game', 300, 270);
+        }
+        
+        function generateSBX() {
+            const canvas = document.getElementById('sbx-canvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Bright energetic background
+            const gradient = ctx.createLinearGradient(0, 0, 600, 400);
+            gradient.addColorStop(0, '#ff6b6b');
+            gradient.addColorStop(0.5, '#feca57');
+            gradient.addColorStop(1, '#48dbfb');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 600, 400);
+            
+            // Racing stripes
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+            for(let i = 0; i < 600; i += 60) {
+                ctx.fillRect(i, 0, 30, 400);
+            }
+            
+            // Title
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 72px Arial';
+            ctx.textAlign = 'center';
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 3;
+            ctx.strokeText('SBX 5K', 300, 200);
+            ctx.fillText('SBX 5K', 300, 200);
+            
+            // Subtitle
+            ctx.font = '20px Arial';
+            ctx.fillStyle = '#333';
+            ctx.fillText('Racing Game', 300, 250);
+        }
+        
+        function downloadImage(canvasId, filename) {
+            const canvas = document.getElementById(canvasId);
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL('image/jpeg', 0.8);
+            link.click();
+        }
+        
+        // Generate initial images
+        generateCrypto();
+        generateCurse();
+        generateSBX();
+    </script>
+</body>
+</html>
