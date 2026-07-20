@@ -3,344 +3,375 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>João Borlido – Senior Unity Game Engineer</title>
-  <meta name="description" content="Senior Unity Game Engineer specializing in multiplayer systems, mobile development, and CI/CD pipelines. View my portfolio of games and projects.">
+  <title>João Borlido — Software Engineer &amp; CTO | AI Automation &amp; DevOps</title>
+  <meta name="description" content="Software engineer and CTO in Portugal. I build AI automation and agent infrastructure, DevOps pipelines, and SaaS — and train teams to use AI effectively. Co-founder of Xarp Reality Labs and coop.tech.">
+  <link rel="canonical" href="https://jborlido.pt/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jborlido.pt/">
+  <meta property="og:title" content="João Borlido — Software Engineer &amp; CTO">
+  <meta property="og:description" content="AI automation &amp; agent infrastructure, DevOps pipelines, SaaS, and AI enablement for teams. Co-founder &amp; CTO at Xarp Reality Labs.">
+  <meta property="og:image" content="https://jborlido.pt/assets/images/headshot.jpg">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="João Borlido — Software Engineer &amp; CTO">
+  <meta name="twitter:description" content="AI automation &amp; agent infrastructure, DevOps pipelines, SaaS, and AI enablement for teams.">
+  <meta name="twitter:image" content="https://jborlido.pt/assets/images/headshot.jpg">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Fragment+Mono&display=swap" rel="stylesheet">
+
+  <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="assets/css/main.css" />
-  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/navigation.js" defer></script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://jborlido.pt/#person",
+        "name": "João Borlido",
+        "url": "https://jborlido.pt/",
+        "image": "https://jborlido.pt/assets/images/headshot.jpg",
+        "jobTitle": "Software Engineer & CTO",
+        "email": "mailto:contact@jborlido.pt",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Viana do Castelo",
+          "addressCountry": "PT"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Xarp Reality Labs",
+          "url": "https://xarp.ai"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Instituto Politécnico de Viana do Castelo"
+        },
+        "sameAs": [
+          "https://linkedin.com/in/joao-borlido",
+          "https://github.com/jborlido",
+          "https://jborlido.substack.com",
+          "https://substack.com/@jborlido"
+        ],
+        "knowsAbout": [
+          "AI Automation",
+          "AI Agents",
+          "DevOps",
+          "CI/CD",
+          "Software Engineering",
+          "SaaS Development",
+          "Unity",
+          "Extended Reality"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://jborlido.pt/#website",
+        "url": "https://jborlido.pt/",
+        "name": "João Borlido — Software Engineer & CTO",
+        "publisher": { "@id": "https://jborlido.pt/#person" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <!-- Navigation will be inserted by navigation.js -->
+  <!-- Navigation inserted by navigation.js -->
 
-  <!-- Hero Section -->
-  <section id="home" class="hero section-fullscreen">
-    <div class="hero-content">
-      <img src="assets/images/headshot.jpg" alt="João Borlido" class="hero__photo">
-      <h1 class="hero__name">João Borlido</h1>
-      <p class="hero__title">Senior Unity Engineer</p>
-      <p class="hero__description">
-        Crafting immersive gaming experiences with cutting-edge multiplayer systems, 
-        mobile optimization, and robust CI/CD pipelines. Specialized in Unity development 
-        with a passion for performance and player engagement.
-      </p>
-      <div class="hero__actions">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#about" class="btn btn-secondary">Get In Touch</a>
+  <!-- ============ HERO ============ -->
+  <header id="home" class="hero">
+    <p class="kicker">// Software Engineer &amp; CTO</p>
+    <h1>João<br>Borlido<span class="accent-dot">.</span></h1>
+    <p class="hero-lede">
+      I help companies ship faster — with <strong>AI-automated workflows</strong>,
+      solid <strong>DevOps &amp; CI/CD</strong>, and teams trained to use AI as real leverage.
+      8+ years shipping production software, from multiplayer games to autonomous agent infrastructure.
+    </p>
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary">View My Work</a>
+      <a href="#about" class="btn btn-ghost">Get In Touch</a>
+    </div>
+    <div class="status-strip" role="presentation">
+      <div class="status-cell">
+        <div class="label">Location</div>
+        <div class="value">Viana do Castelo, PT</div>
+      </div>
+      <div class="status-cell">
+        <div class="label">Timezone</div>
+        <div class="value">UTC+0 · Lisbon</div>
+      </div>
+      <div class="status-cell">
+        <div class="label">Currently</div>
+        <div class="value">CTO @ <a href="https://xarp.ai" target="_blank" rel="noopener">Xarp</a></div>
+      </div>
+      <div class="status-cell">
+        <div class="label">Status</div>
+        <div class="value"><span class="pulse"></span>Open to projects</div>
       </div>
     </div>
-    <div class="scroll-indicator">
-      <span>Scroll to explore</span>
-      <div class="scroll-arrow"></div>
+  </header>
+
+  <!-- ============ WHAT I DO ============ -->
+  <section id="services" class="section">
+    <div class="section-head">
+      <span class="idx">01</span>
+      <h2>What I Do</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="services-grid">
+      <div class="service reveal reveal-1">
+        <span class="num">A</span>
+        <h3>AI Automation &amp; Agent Infrastructure</h3>
+        <p>Autonomous agent systems that run real operations — standups, pull requests, research, reporting. LLM integrations, custom tooling, and cost-controlled infrastructure that works while you sleep.</p>
+      </div>
+      <div class="service reveal reveal-2">
+        <span class="num">B</span>
+        <h3>AI Enablement &amp; Training</h3>
+        <p>Getting non-technical teams genuinely productive with AI tools — from state-sponsored bootcamps to internal process redesign. Workflows, not buzzwords.</p>
+      </div>
+      <div class="service reveal reveal-3">
+        <span class="num">C</span>
+        <h3>DevOps &amp; CI/CD</h3>
+        <p>End-to-end pipelines with GitHub Actions and Jenkins. Cloud infrastructure on AWS and Azure. Automated builds, tests, and store deployments — five years of it in production.</p>
+      </div>
+      <div class="service reveal reveal-4">
+        <span class="num">D</span>
+        <h3>Product Engineering &amp; Leadership</h3>
+        <p>From architecture to launch: full-stack delivery (TypeScript, serverless, Unity/XR) and the leadership to get teams there — CTO at Xarp Reality Labs, President at coop.tech.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects section-fullscreen">
-    <div class="section-header">
-      <h2 class="section-title">Featured Projects</h2>
-      <p class="section-subtitle">A showcase of my recent game development work</p>
+  <!-- ============ WORK (case studies + SaaS + tools) ============ -->
+  <!--
+    HOW TO ADD A WORK CARD
+    Copy an <article class="work-card"> block below and edit:
+      1. Badge: badge-case (Case Study) / badge-saas (SaaS) / badge-tool (Tool)
+      2. Optional: <span class="work-live">● Live</span> in .work-card-top
+      3. Title, description, .work-tags
+      4. Link: <a class="work-card-link"> wrapping the whole card, plus the
+         .work-cta label. For unlinked cards use .work-note instead.
+    Case study pages live in /work/ — copy an existing one as a template.
+    Remember to add new pages to sitemap.xml.
+  -->
+  <section id="work" class="section">
+    <div class="section-head">
+      <span class="idx">02</span>
+      <h2>Work</h2>
+      <span class="rule"></span>
     </div>
-    
-    <div class="projects-grid">
-      <article class="project-card featured">
-        <div class="project-image">
-          <img src="assets/images/cryptofights.jpg" alt="CryptoFights: Ascension">
-          <div class="project-overlay">
-            <div class="project-info">
-              <h3>CryptoFights: Ascension</h3>
-              <p>Multiplayer strategy game with blockchain integration</p>
-              <div class="project-tags">
-                <span>Unity</span>
-                <span>Authoritative Server Architecture</span>
-                <span>Turn Based</span>
-                <span>Matchmaking</span>
-                <span>Mobile</span>
-              </div>
-            </div>
-          </div>
+    <div class="work-grid">
+
+      <article class="work-card reveal reveal-1">
+        <div class="work-card-top">
+          <span class="badge badge-case">Case Study</span>
         </div>
-        <a href="projects/cryptofights.html" class="project-link">
-          <span>View Project</span>
-          <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10.707 2.293a1 1 0 00-1.414 1.414L13.586 8H3a1 1 0 100 2h10.586l-4.293 4.293a1 1 0 101.414 1.414l6-6a1 1 0 000-1.414l-6-6z"/>
-          </svg>
-        </a>
+        <h3>Autonomous AI Agents for Engineering Ops</h3>
+        <p>A self-hosted multi-agent system where AI agents run daily operations: one ships pull requests autonomously, one runs team standups end-to-end, one handles deep research. Isolated services, custom tooling, predictable costs.</p>
+        <div class="work-tags">
+          <span>Claude</span><span>Python</span><span>systemd</span><span>Discord</span><span>MCP</span>
+        </div>
+        <span class="work-cta">Read case study <span class="arrow">→</span></span>
+        <a href="work/ai-agent-ops.html" class="work-card-link" aria-label="Read case study: Autonomous AI Agents for Engineering Ops"></a>
       </article>
 
-      <article class="project-card">
-        <div class="project-image">
-          <img src="assets/images/curse-chasers.png" alt="Curse Chasers">
-          <div class="project-overlay">
-            <div class="project-info">
-              <h3>Curse Chasers</h3>
-              <p>Action-adventure with supernatural combat</p>
-              <div class="project-tags">
-                <span>Unity</span>
-                <span>Shaders</span>
-                <span>AI</span>
-              </div>
-            </div>
-          </div>
+      <article class="work-card reveal reveal-2">
+        <div class="work-card-top">
+          <span class="badge badge-case">Case Study</span>
         </div>
-        <a href="projects/curse-chasers.html" class="project-link">
-          <span>View Project</span>
-          <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10.707 2.293a1 1 0 00-1.414 1.414L13.586 8H3a1 1 0 100 2h10.586l-4.293 4.293a1 1 0 101.414 1.414l6-6a1 1 0 000-1.414l-6-6z"/>
-          </svg>
-        </a>
+        <h3>AI Enablement for Non-Technical Teams</h3>
+        <p>An AI education tool used in state-sponsored bootcamps, plus internal adoption programs that turn everyday tasks into AI-assisted workflows — built for people who don't write code.</p>
+        <div class="work-tags">
+          <span>AI Education</span><span>Process Design</span><span>LLM Tools</span><span>Training</span>
+        </div>
+        <span class="work-cta">Read case study <span class="arrow">→</span></span>
+        <a href="work/ai-enablement.html" class="work-card-link" aria-label="Read case study: AI Enablement for Non-Technical Teams"></a>
       </article>
 
-      <article class="project-card">
-        <div class="project-image">
-          <img src="assets/images/sbx-5k.jpg" alt="SBX 5K">
-          <div class="project-overlay">
-            <div class="project-info">
-              <h3>SBX 5K</h3>
-              <p>Fast paced quake like FPS</p>
-              <div class="project-tags">
-                <span>Unity</span>
-                <span>Physics</span>
-                <span>Matchmaking</span>
-                <span>Real-time Multiplayer</span>
-                <span>PC</span>
-              </div>
-            </div>
-          </div>
+      <!-- Wedding Photo Contest — hidden while the SaaS is reworked. Restore by uncommenting.
+      <article class="work-card reveal reveal-3">
+        <div class="work-card-top">
+          <span class="badge badge-saas">SaaS</span>
+          <span class="work-live">● Live</span>
         </div>
-        <a href="projects/sbx-5k.html" class="project-link">
-          <span>View Project</span>
-          <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10.707 2.293a1 1 0 00-1.414 1.414L13.586 8H3a1 1 0 100 2h10.586l-4.293 4.293a1 1 0 101.414 1.414l6-6a1 1 0 000-1.414l-6-6z"/>
-          </svg>
-        </a>
+        <h3>Wedding Photo Contest</h3>
+        <p>Create a photo contest for your event in 60 seconds. Privacy-first by design: photos land in the organizer's own Google Drive — the platform never stores them. €5 per event, flat.</p>
+        <div class="work-tags">
+          <span>Next.js</span><span>Cloudflare</span><span>Google Drive API</span><span>Stripe</span>
+        </div>
+        <span class="work-cta">Visit casamento.jborlido.pt <span class="arrow">→</span></span>
+        <a href="https://casamento.jborlido.pt" target="_blank" rel="noopener" class="work-card-link" aria-label="Visit Wedding Photo Contest (opens in new tab)"></a>
       </article>
-    </div>
-  </section>
+      -->
 
-  <!-- Expertise Section -->
-  <section id="expertise" class="expertise section-fullscreen">
-    <div class="section-header">
-      <h2 class="section-title">Technical Expertise</h2>
-      <p class="section-subtitle">Core competencies and specialized skills</p>
-    </div>
-    
-    <div class="expertise-grid">
-      <div class="expertise-category">
-        <div class="expertise-icon">🎮</div>
-        <h3>Game Development</h3>
-        <ul>
-          <li>Unity 3D Engine (5+ years)</li>
-          <li>C# Programming</li>
-          <li>Game Architecture Design</li>
-          <li>Performance Optimization</li>
-          <li>Cross-platform Development</li>
-        </ul>
-      </div>
-
-      <div class="expertise-category">
-        <div class="expertise-icon">🌐</div>
-        <h3>Multiplayer Systems</h3>
-        <ul>
-          <li>Serverless Architecture</li>
-          <li>Authoritative Server Architecture</li>
-          <li>Real-time & Turn Based Combat Systems</li>
-          <li>Playfab & Photon</li>
-          <li>Matchmaking Systems</li>
-        </ul>
-      </div>
-
-      <div class="expertise-category">
-        <div class="expertise-icon">📱</div>
-        <h3>Mobile Development</h3>
-        <ul>
-          <li>iOS & Android Optimization</li>
-          <li>Touch Controls & UI</li>
-          <li>Memory Management</li>
-          <li>Battery Life Optimization</li>
-          <li>App Store Deployment</li>
-        </ul>
-      </div>
-
-      <div class="expertise-category">
-        <div class="expertise-icon">⚙️</div>
-        <h3>DevOps & Tools</h3>
-        <ul>
-          <li>CI/CD Pipelines</li>
-          <li>AWS Cloud & Azure Services</li>
-          <li>Git Version Control</li>
-          <li>Automated Testing</li>
-          <li>Build Automation</li>
-        </ul>
-      </div>
-
-      <div class="expertise-category">
-        <div class="expertise-icon">🎨</div>
-        <h3>Graphics & Shaders</h3>
-        <ul>
-          <li>Visual Effects (VFX)</li>
-          <li>Lighting Systems</li>
-          <li>Post-processing Effects</li>
-          <li>Optimization Techniques</li>
-        </ul>
-      </div>
-
-      <div class="expertise-category">
-        <div class="expertise-icon">🔗</div>
-        <h3>Emerging Technologies</h3>
-        <ul>
-          <li>AR/VR Development</li>
-          <li>Machine Learning</li>
-          <li>Computer Vision</li>
-          <li>LLMs</li>
-          <li>MCP Servers & Agentic AI</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" class="education section-fullscreen">
-    <div class="section-header">
-      <h2 class="section-title">Education & Background</h2>
-      <p class="section-subtitle">Academic foundation and professional development</p>
-    </div>
-    
-    <div class="education-timeline">
-    <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <h3>MSc - Computer Engineering</h3>
-          <p class="timeline-period">2024 - Present</p>
-          <p>Special interests in Software Engineering, Artificial Intelligence, Machine Learning, Computer Vision and VR/AR/XR.</p>
+      <article class="work-card reveal reveal-3">
+        <div class="work-card-top">
+          <span class="badge badge-tool">Tool</span>
         </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <h3>Co-Founder & Head of Product - Xarp Reality Labs</h3>
-          <p class="timeline-period">2023 - Present</p>
-          <p>Co-founded an XR startup that landed 250K R&D funding.</p>
+        <h3>agent-infra</h3>
+        <p>A lightweight Python framework for running autonomous Claude agents on remote Linux machines — conversation memory, conditional triggers, a Discord control surface, and systemd supervision.</p>
+        <div class="work-tags">
+          <span>Python</span><span>Claude CLI</span><span>Linux</span><span>asyncio</span>
         </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <h3>Senior Unity C# Developer - FYX Gaming</h3>
-          <p class="timeline-period">2019 - 2024</p>
-          <p>Worked as part of a team of Unity Developers responsible for the release of a FPS video game to Steam.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <h3>Co-Founder - Shadowmatic Labs</h3>
-          <p class="timeline-period">2018</p>
-          <p>Worked as part of a team of Unity Developers responsible for the release of a FPS video game to Steam.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <h3>BSc - Computer Graphics and Multimedia Engineering</h3>
-          <p class="timeline-period">2015 - 2019</p>
-          <p>Special interests in Video Game Development, Software Engineering and Computer Graphics.</p>
-        </div>
-      </div>
-
+        <span class="work-note">// private repository — details on request</span>
+      </article>
 
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="about section-fullscreen">
-    <div class="about-content">
-      <div class="about-text">
-        <h2 class="section-title">About Me</h2>
-        <p class="about-description">
-          Based in beautiful Portugal, I'm a passionate game developer with over 5 years of experience 
-          creating engaging interactive experiences. My journey started with a curiosity about how games work 
-          and evolved into a deep expertise in multiplayer systems and mobile optimization.
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section">
+    <div class="section-head">
+      <span class="idx">03</span>
+      <h2>Experience</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <span class="tl-date">2023 — Present</span>
+        <h3>Co-Founder &amp; CTO</h3>
+        <span class="tl-org"><a href="https://xarp.ai" target="_blank" rel="noopener">Xarp Reality Labs</a></span>
+        <p>Building Physical AI: augmented reality, smart mirrors, and behavioural analytics — the company behind Dressify. I lead product engineering and applied research, and run parts of team operations on autonomous AI agents.</p>
+      </div>
+
+      <div class="tl-item reveal">
+        <span class="tl-date">2021 — Present</span>
+        <h3>President <span class="mono">(volunteer)</span></h3>
+        <span class="tl-org"><a href="https://cooperativatecnologica.pt" target="_blank" rel="noopener">coop.tech — Cooperativa Tecnológica</a></span>
+        <p>Founded the first Portuguese tech cooperative — a startup consortium and technological innovation center. CTVC holds a seat on the EU AI Act Advisory Forum, providing technical opinions to the European Commission on AI — one of only two cooperatives in the Forum.</p>
+      </div>
+
+      <div class="tl-item reveal">
+        <span class="tl-date">2019 — 2024</span>
+        <h3>Senior Unity C# Developer</h3>
+        <span class="tl-org">FYX Gaming</span>
+        <p>Five years shipping a server-authoritative multiplayer game: owned the CI/CD pipelines (automated Play Store and TestFlight deployments with GitHub Actions and Jenkins), serverless backend integration on Azure, and combat &amp; matchmaking systems.</p>
+      </div>
+
+      <div class="tl-item reveal">
+        <span class="tl-date">2018 — 2020</span>
+        <h3>Earlier Roles</h3>
+        <span class="tl-org">Spatial Digital · SolipsAR · Shadowmatic Labs</span>
+        <ul class="tl-compact">
+          <li><span class="mono">2020</span>Lead Developer, Spatial Digital — led the Unity + backend team of an AR motion-tracking app</li>
+          <li><span class="mono">2019</span>Unity Developer, SolipsAR — AR mobile app gamifying recycling</li>
+          <li><span class="mono">2018</span>Co-Founder, Shadowmatic Labs — shipped an FPS game to Steam</li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal">
+        <span class="tl-date">Education</span>
+        <h3>Instituto Politécnico de Viana do Castelo</h3>
+        <span class="tl-org">IPVC</span>
+        <ul class="tl-compact">
+          <li><span class="mono">2024 —</span>MSc, Computer Engineering — software engineering, multiplayer systems, VR/AR/XR</li>
+          <li><span class="mono">2015 — 19</span>BSc, Computer Graphics &amp; Multimedia Engineering</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ GAME DEV BACKGROUND ============ -->
+  <section id="games" class="section">
+    <div class="section-head">
+      <span class="idx">+</span>
+      <h2>Background: Game Development</h2>
+      <span class="rule"></span>
+    </div>
+    <p class="games-intro">
+      Before AI infrastructure, I spent <strong>8 years shipping multiplayer games</strong> —
+      the discipline behind how I approach real-time systems, performance budgets, and
+      server-authoritative architecture today.
+    </p>
+    <div class="games-grid">
+      <a href="projects/cryptofights.html" class="game-card game-card-wide reveal reveal-1">
+        <div class="thumb"><img src="assets/images/cfs-gameplay.webp" alt="CryptoFights: Ascension gameplay" loading="lazy"></div>
+        <div class="body">
+          <h3>CryptoFights: Ascension</h3>
+          <p class="desc">Five years at FYX Gaming on a turn-based multiplayer strategy game: server-authoritative combat, matchmaking, and the CI/CD pipelines that shipped it to Google Play and the App Store.</p>
+          <span class="work-cta" style="margin-top:1rem;">View project <span class="arrow">→</span></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT / CONTACT ============ -->
+  <section id="about" class="section">
+    <div class="section-head">
+      <span class="idx">04</span>
+      <h2>About &amp; Contact</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <img src="assets/images/headshot.jpg" alt="João Borlido">
+      </div>
+      <div class="about-copy">
+        <p>
+          I'm João — a software engineer from Viana do Castelo, Portugal. I've spent the last decade
+          building things that ship: multiplayer games, XR products, SaaS, and lately the
+          <strong>AI agent infrastructure that runs parts of my companies on autopilot</strong>.
         </p>
-        <p class="about-description">
-          When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, 
-          or enjoying the Portuguese coastline. I believe in creating games that bring people together and 
-          push the boundaries of what's possible on mobile devices.
+        <p>
+          I co-founded <strong>Xarp Reality Labs</strong> (where I'm CTO) and <strong>coop.tech</strong>,
+          the first Portuguese tech cooperative. I care about software that works in production,
+          automation that actually saves time, and teaching people to use AI as leverage — not as a buzzword.
         </p>
-        
-        <div class="contact-info">
-          <h3>Let's Connect</h3>
-          <div class="contact-methods">
-            <a href="mailto:contact@jborlido.pt" class="contact-link">
-              <span class="contact-icon">📧</span>
-              <span>Email</span>
-            </a>
-            <a href="https://linkedin.com/in/joao-borlido" class="contact-link">
-              <span class="contact-icon">💼</span>
-              <span>LinkedIn</span>
-            </a>
-            <a href="https://github.com/jborlido" class="contact-link">
-              <span class="contact-icon">💻</span>
-              <span>GitHub</span>
-            </a>
-          </div>
+        <p>
+          I also write about software, AI, and building things —
+          <a href="https://jborlido.substack.com" target="_blank" rel="noopener" style="color: var(--accent); border-bottom: 1px solid var(--accent-line);">read my posts on Substack</a>.
+        </p>
+        <div class="stats-row">
+          <div class="stat reveal reveal-1"><span class="num">8+</span><span class="label">Years Shipping</span></div>
+          <div class="stat reveal reveal-2"><span class="num">3</span><span class="label">Orgs Co-Founded</span></div>
+          <div class="stat reveal reveal-3"><span class="num">4</span><span class="label">Games Shipped</span></div>
+          <div class="stat reveal reveal-4"><span class="num">€250K+</span><span class="label">R&amp;D Funding</span></div>
         </div>
-      </div>
-      
-      <div class="about-visual">
-        <div class="about-stats">
-          <div class="stat">
-            <span class="stat-number">5+</span>
-            <span class="stat-label">Years Experience</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">15+</span>
-            <span class="stat-label">Projects Completed</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">3</span>
-            <span class="stat-label">Published Games</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">100k+</span>
-            <span class="stat-label">Players Reached</span>
-          </div>
+        <div class="contact-row">
+          <a href="mailto:contact@jborlido.pt" class="btn btn-primary">contact@jborlido.pt</a>
+          <a href="https://linkedin.com/in/joao-borlido" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+          <a href="https://github.com/jborlido" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+          <a href="https://jborlido.substack.com" target="_blank" rel="noopener" class="btn btn-ghost">Writing ↗</a>
+          <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Resume ↓</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ============ FOOTER ============ -->
   <footer class="footer">
-    <p>Crafted with ❤️ in Portugal — © 2025 João Borlido</p>
+    <div class="footer-inner">
+      <span class="mono">© 2026 João Borlido — Viana do Castelo, PT</span>
+      <span class="mono"><a href="https://xarp.ai" target="_blank" rel="noopener">xarp.ai</a> · <a href="https://cooperativatecnologica.pt" target="_blank" rel="noopener">coop.tech</a> · <a href="https://jborlido.substack.com" target="_blank" rel="noopener">substack</a></span>
+    </div>
   </footer>
-  
-  <script>
-    // Main page specific functionality
-    document.addEventListener('DOMContentLoaded', function() {
-      // Intersection Observer for animations
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-      };
 
+  <script>
+    // Scroll-in reveals
+    document.addEventListener('DOMContentLoaded', function () {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('animate-in');
+            observer.unobserve(entry.target);
           }
         });
-      }, observerOptions);
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-      // Observe all animated elements
-      document.querySelectorAll('.project-card, .expertise-category, .timeline-item, .stat').forEach(el => {
-        observer.observe(el);
-      });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     });
   </script>
 </body>

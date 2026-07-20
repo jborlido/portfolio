@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI Enablement for Non-Technical Teams — João Borlido</title>
+  <meta name="description" content="Case study: teaching non-technical people to use AI tools productively — an AI education tool used in state-sponsored bootcamps, and internal programs that turn daily tasks into AI-assisted workflows.">
+  <link rel="canonical" href="https://jborlido.pt/work/ai-enablement.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jborlido.pt/work/ai-enablement.html">
+  <meta property="og:title" content="AI Enablement for Non-Technical Teams — Case Study">
+  <meta property="og:description" content="From state-sponsored bootcamps to internal AI adoption: getting non-technical teams genuinely productive with AI tools.">
+  <meta property="og:image" content="https://jborlido.pt/assets/images/headshot.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Fragment+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script src="../assets/js/navigation.js" defer></script>
+</head>
+<body>
+  <!-- Navigation inserted by navigation.js -->
+
+  <main class="page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span>/</span><a href="../index.html#work">Work</a><span>/</span><span>AI Enablement</span>
+    </nav>
+
+    <header class="page-head">
+      <span class="badge badge-case">Case Study</span>
+      <h1>AI Enablement for Non-Technical Teams</h1>
+      <p class="lede">
+        Most companies buy AI tools; few change how people actually work.
+        This is how I close that gap — in classrooms and inside companies.
+      </p>
+      <div class="meta-strip">
+        <div class="status-cell">
+          <div class="label">Context</div>
+          <div class="value">coop.tech + internal</div>
+        </div>
+        <div class="status-cell">
+          <div class="label">Audience</div>
+          <div class="value">Non-technical teams</div>
+        </div>
+        <div class="status-cell">
+          <div class="label">Status</div>
+          <div class="value"><span class="pulse"></span>Ongoing</div>
+        </div>
+      </div>
+    </header>
+
+    <article class="prose">
+      <h2><span class="idx">01</span>The Problem</h2>
+      <p>
+        AI adoption usually fails the same way: a company buys licences, sends a memo,
+        and six months later the tools sit unused — or worse, get used badly. The missing
+        piece isn't the technology. It's the translation layer between what AI can do and
+        what a specific person's Tuesday afternoon actually looks like.
+      </p>
+      <p>
+        Non-technical people don't need to understand transformers. They need to know
+        which of their daily tasks AI can absorb, how to hand those tasks over safely,
+        and how to check the work.
+      </p>
+
+      <h2><span class="idx">02</span>Teaching at Scale: State-Sponsored Bootcamps</h2>
+      <p>
+        Through <strong>coop.tech</strong> — the first Portuguese tech cooperative, which I
+        co-founded and preside over — we built an AI educational tool for teaching
+        programming. It has been used in state-sponsored bootcamps, putting AI-assisted
+        learning in front of people entering tech from entirely different backgrounds.
+      </p>
+      <p>
+        The lesson from the classroom carries everywhere: people learn AI by using it on
+        their own problems, not by watching demos of someone else's.
+      </p>
+      <p>
+        This work is informed by deep involvement in EU AI governance: CTVC holds a seat
+        on the <strong>EU AI Act Advisory Forum</strong>, providing technical opinions to the
+        European Commission — one of only two cooperatives in the Forum. Enablement built
+        with the regulation understood from the inside.
+      </p>
+
+      <h2><span class="idx">03</span>Inside Companies: Workflows, Not Buzzwords</h2>
+      <p>
+        In the companies I run, AI adoption is an engineering discipline, not a policy.
+        The approach:
+      </p>
+      <ul>
+        <li><strong>Start from the task, not the tool.</strong> Map what a person actually does in a week, then identify which pieces AI can take over — reporting, documentation, summarizing, first drafts, cross-checking.</li>
+        <li><strong>Build the workflow around them.</strong> A non-technical person shouldn't configure anything. They interact through tools they already use — chat, email, forms — and the AI plumbing lives behind that.</li>
+        <li><strong>Add guardrails, not gates.</strong> AI output gets checked where it matters and flows freely where it doesn't. People stay accountable for results; AI absorbs the mechanical work.</li>
+        <li><strong>Train by doing.</strong> Short sessions on real tasks beat long courses on theory, every time.</li>
+      </ul>
+
+      <div class="callout">
+        <p>
+          <strong>The measure of success:</strong> not how many people "have access to AI,"
+          but how many tasks stopped being done by hand — and stayed that way a month later.
+        </p>
+      </div>
+
+      <h2><span class="idx">04</span>Try It: Pick a Task</h2>
+      <p>
+        Pick a task any team does weekly, and see how the workflow changes.
+        Examples are illustrative — the real version of this exercise is done on
+        <em>your</em> team's actual tasks.
+      </p>
+      <div class="demo-panel">
+        <div class="demo-titlebar">
+          <span class="title">task transformer</span>
+          <span class="tag">Illustrative</span>
+        </div>
+        <div class="flow-tabs" id="flow-tabs" role="tablist"></div>
+        <div class="flow-compare">
+          <div class="flow-col before">
+            <div class="head">Before — by hand</div>
+            <ol id="flow-before"></ol>
+            <div class="time" id="flow-before-time"></div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-col after">
+            <div class="head">After — AI-assisted</div>
+            <ol id="flow-after"></ol>
+            <div class="time" id="flow-after-time"></div>
+          </div>
+        </div>
+      </div>
+
+      <h2><span class="idx">05</span>Where This Goes</h2>
+      <p>
+        The same playbook — task mapping, invisible plumbing, guardrails, training by doing —
+        transfers to any team that pushes paper, writes reports, or answers the same questions
+        repeatedly. The technology is ready; the bottleneck is the translation, and that's
+        the part I do.
+      </p>
+
+      <div class="page-cta">
+        <p><strong>Want your team actually using AI — not just paying for it?</strong><br>I run enablement programs built around your real workflows.</p>
+        <a href="mailto:contact@jborlido.pt" class="btn btn-primary">Get in touch</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="mono">© 2026 João Borlido</span>
+      <span class="mono"><a href="../index.html#work">← Back to Work</a></span>
+    </div>
+  </footer>
+
+  <script>
+    // Task transformer — illustrative before/after workflows
+    (function () {
+      const TASKS = {
+        'Weekly report': {
+          before: [
+            'Chase five people for status updates',
+            'Copy numbers from three different tools',
+            'Write the summary from scratch',
+            'Format, proofread, send'
+          ],
+          beforeTime: '~3h every week',
+          after: [
+            'Agent collects updates and pulls the numbers overnight',
+            'Draft report waiting in the morning',
+            '<strong>Human: review, adjust one paragraph, send</strong>'
+          ],
+          afterTime: '~15 min every week'
+        },
+        'Meeting notes': {
+          before: [
+            'One person half-listens while taking notes',
+            'Notes get cleaned up (or don’t) hours later',
+            'Action items copied by hand into the task board'
+          ],
+          beforeTime: '~45 min per meeting + lost detail',
+          after: [
+            'Transcript captured and summarized automatically',
+            'Action items extracted and filed to the board',
+            '<strong>Human: confirm owners and due dates</strong>'
+          ],
+          afterTime: '~5 min per meeting'
+        },
+        'Client email': {
+          before: [
+            'Stare at a blank reply for ten minutes',
+            'Dig through old threads for the context',
+            'Write, second-guess the tone, rewrite'
+          ],
+          beforeTime: '~30 min per tricky email',
+          after: [
+            'AI drafts the reply with thread context and your tone',
+            '<strong>Human: fact-check, adjust, hit send</strong>'
+          ],
+          afterTime: '~5 min per email'
+        },
+        'Document intake': {
+          before: [
+            'Open each PDF, find the relevant fields',
+            'Re-type data into the spreadsheet or system',
+            'Spot-check for typos later (sometimes)'
+          ],
+          beforeTime: '~2 min per document, error-prone',
+          after: [
+            'AI extracts and validates the fields on arrival',
+            'Flags only the documents it’s unsure about',
+            '<strong>Human: review the flagged ones</strong>'
+          ],
+          afterTime: '~seconds per document'
+        }
+      };
+
+      const tabs = document.getElementById('flow-tabs');
+      const beforeEl = document.getElementById('flow-before');
+      const afterEl = document.getElementById('flow-after');
+      const beforeTime = document.getElementById('flow-before-time');
+      const afterTime = document.getElementById('flow-after-time');
+
+      function show(name) {
+        const t = TASKS[name];
+        beforeEl.innerHTML = t.before.map(s => '<li>' + s + '</li>').join('');
+        afterEl.innerHTML = t.after.map(s => '<li class="human">' + s + '</li>').join('');
+        beforeTime.textContent = t.beforeTime;
+        afterTime.textContent = t.afterTime;
+        tabs.querySelectorAll('.flow-tab').forEach(b => {
+          b.classList.toggle('active', b.textContent === name);
+        });
+      }
+
+      Object.keys(TASKS).forEach(function (name, idx) {
+        const b = document.createElement('button');
+        b.className = 'flow-tab';
+        b.setAttribute('role', 'tab');
+        b.textContent = name;
+        b.addEventListener('click', function () { show(name); });
+        tabs.appendChild(b);
+        if (idx === 0) show(name);
+      });
+    })();
+  </script>
+</body>
+</html>
