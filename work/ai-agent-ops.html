@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Autonomous AI Agents for Engineering Ops — João Borlido</title>
-  <meta name="description" content="Case study: a self-hosted multi-agent AI system that runs real engineering operations — autonomous pull requests, agent-run standups, and research — with isolated services and predictable costs.">
+  <title>Autonomous AI Agents for Engineering Ops · João Borlido</title>
+  <meta name="description" content="Case study: a self-hosted multi-agent AI system that runs real engineering operations. Autonomous pull requests, agent-run standups, and research, with isolated services and predictable costs.">
   <link rel="canonical" href="https://jborlido.pt/work/ai-agent-ops.html">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://jborlido.pt/work/ai-agent-ops.html">
-  <meta property="og:title" content="Autonomous AI Agents for Engineering Ops — Case Study">
-  <meta property="og:description" content="How I built a self-hosted multi-agent AI system that ships pull requests, runs standups, and does research — autonomously.">
+  <meta property="og:title" content="Autonomous AI Agents for Engineering Ops · Case Study">
+  <meta property="og:description" content="How I built a self-hosted multi-agent AI system that ships pull requests, runs standups, and does research on its own.">
   <meta property="og:image" content="https://jborlido.pt/assets/images/headshot.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,7 @@
       <p class="lede">
         A self-hosted multi-agent system where AI agents run daily operations:
         shipping pull requests, running team standups end-to-end, and handling
-        deep research — while costs stay predictable.
+        research, all with predictable costs.
       </p>
       <div class="meta-strip">
         <div class="status-cell">
@@ -56,36 +56,36 @@
       <h2><span class="idx">01</span>The Problem</h2>
       <p>
         Small teams drown in operational overhead. Standups need running, status needs
-        collecting, routine code changes need making, and research questions pile up —
-        none of it is anyone's "real job," but all of it eats the week. Hiring for it
-        doesn't scale at startup size; ignoring it means things slip.
+        collecting, routine code changes need making, and research questions pile up.
+        None of it is anyone's main job, but all of it eats the week. Hiring for it
+        doesn't make sense at startup size, and ignoring it means things slip.
       </p>
       <p>
-        The question I set out to answer: how much of this can autonomous AI agents
-        actually own — not as demos, but as reliable infrastructure that runs every day?
+        I wanted to find out how much of this autonomous AI agents can take over,
+        running every day as normal infrastructure rather than as a demo.
       </p>
 
       <h2><span class="idx">02</span>The System</h2>
       <p>
-        The result is a fleet of autonomous AI agents running on self-hosted Linux
-        machines. Each agent is fully isolated — one agent, one service, one control
-        surface — so a misbehaving agent can't take down its siblings.
+        The result is a set of autonomous AI agents running on self-hosted Linux
+        machines. Each agent is fully isolated: one agent, one service, one control
+        surface. A misbehaving agent can't take down the others.
       </p>
       <ul>
         <li><strong>An ops agent runs daily standups end-to-end.</strong> It reads the team's updates, opens threads to ask clarifying questions, requests and analyzes screenshots, cross-references the project-management board against actual git activity, and publishes a daily verdict to a reports repository.</li>
-        <li><strong>An engineering agent ships code.</strong> It picks up scoped tasks and opens pull requests autonomously — humans review, the agent iterates on feedback.</li>
-        <li><strong>A research agent handles deep-dive investigations</strong> — the questions that would otherwise sit in a someday pile.</li>
+        <li><strong>An engineering agent ships code.</strong> It picks up scoped tasks and opens pull requests on its own. A human reviews, and the agent iterates on the feedback.</li>
+        <li><strong>A research agent handles the deeper investigations</strong> that would otherwise sit in a someday pile.</li>
         <li><strong>A personal assistant agent</strong> manages calendars, tasks, and the glue work between the others.</li>
       </ul>
 
       <h2><span class="idx">03</span>Watch It Run</h2>
       <p>
-        This is a replay of what a typical agent-run standup looks like — press play.
-        Names and content are illustrative; the behaviour is the real system's.
+        This is a replay of what a typical agent-run standup looks like. Press play.
+        Names and content are made up, but the behaviour matches the real system.
       </p>
       <div class="demo-panel">
         <div class="demo-titlebar">
-          <span class="title">standup-runner — session replay</span>
+          <span class="title">standup-runner · session replay</span>
           <span class="tag">Simulated</span>
         </div>
         <div class="term" id="term" aria-live="polite"></div>
@@ -98,27 +98,27 @@
 
       <h2><span class="idx">04</span>Under the Hood</h2>
       <ul>
-        <li><strong>Isolation by design:</strong> one agent = one isolated service under systemd supervision, each with its own Discord bot as a control surface. Chat is the UI — no custom frontend to maintain.</li>
+        <li><strong>Isolation by design:</strong> one agent runs as one isolated service under systemd supervision, each with its own Discord bot as a control surface. Chat is the UI, so there is no custom frontend to maintain.</li>
         <li><strong>Custom tool belt:</strong> purpose-built CLI tools for task management, GitHub, and calendars, so agents act through the same interfaces a human would.</li>
-        <li><strong>Conditional triggers, not cron-spam:</strong> agents wake on meaningful conditions rather than fixed schedules, so LLM calls only fire when there's a reason. This is the difference between a predictable bill and a runaway one.</li>
+        <li><strong>Conditional triggers:</strong> agents wake on meaningful conditions rather than fixed schedules, so LLM calls only fire when there is a reason to. That keeps the bill predictable.</li>
         <li><strong>Zero-dependency cost dashboard:</strong> a lightweight usage monitor tracks what every agent spends, per day, at a glance.</li>
-        <li><strong>Conversation memory:</strong> agents keep context across sessions, so Tuesday's agent remembers Monday's decisions.</li>
+        <li><strong>Conversation memory:</strong> agents keep context across sessions and remember earlier decisions.</li>
       </ul>
 
       <div class="callout">
         <p>
           <strong>Design principle:</strong> agents earn autonomy incrementally. Each one starts
-          supervised, proves itself on low-stakes work, and graduates to running unattended —
-          with humans always reviewing the output that matters (like pull requests).
+          supervised, proves itself on low-stakes work, and graduates to running unattended.
+          Humans still review the output that matters, like pull requests.
         </p>
       </div>
 
       <h2><span class="idx">05</span>What Came Out of It</h2>
       <ul>
-        <li>Standups run daily without a human facilitator — and the cross-referencing against git activity catches drift that a tired human wouldn't.</li>
+        <li>Standups run daily without a human facilitator, and the cross-check against git activity catches drift that a person would miss.</li>
         <li>Scoped engineering tasks get turned into reviewable pull requests without a developer context-switching to them.</li>
-        <li>Costs stay flat and predictable through trigger design — the system doesn't burn tokens idling.</li>
-        <li>The architecture generalizes: the same pattern (isolated agents + custom tools + chat control surface) now underpins how I automate operations in the companies I run.</li>
+        <li>Costs stay flat because of the trigger design. The system doesn't burn tokens idling.</li>
+        <li>The architecture generalizes: the same pattern (isolated agents, custom tools, chat as the control surface) now underpins how I automate operations in the companies I run.</li>
       </ul>
 
       <div class="page-cta">
@@ -136,22 +136,22 @@
   </footer>
 
   <script>
-    // Standup replay — scripted simulation of the real agent's behaviour
+    // Standup replay: scripted simulation of the real agent's behaviour
     (function () {
       const LINES = [
-        { t: '07:30', who: 'standup-runner', cls: 'agent', msg: 'starting daily standup — 3 devs on roster' },
+        { t: '07:30', who: 'standup-runner', cls: 'agent', msg: 'starting daily standup, 3 devs on roster' },
         { t: '07:30', who: 'standup-runner', cls: 'agent', msg: 'posted standup prompt in #standup' },
         { t: '07:41', who: 'dev-ana', cls: 'dev', msg: '"Finished the auth refactor, starting on the sync bug today"' },
         { t: '07:41', who: 'standup-runner', cls: 'tool', msg: '⚙ cross-referencing board… task AUTH-142 still marked in-progress' },
-        { t: '07:41', who: 'standup-runner', cls: 'agent', msg: '↳ asked dev-ana: "Board still shows AUTH-142 in progress — done, or is something left?"' },
-        { t: '07:44', who: 'dev-ana', cls: 'dev', msg: '"Oh, right — closing it now"' },
+        { t: '07:41', who: 'standup-runner', cls: 'agent', msg: '↳ asked dev-ana: "Board still shows AUTH-142 in progress. Done, or is something left?"' },
+        { t: '07:44', who: 'dev-ana', cls: 'dev', msg: '"Oh, right, closing it now"' },
         { t: '07:52', who: 'dev-rui', cls: 'dev', msg: '"Blocked: still waiting on staging API keys"' },
         { t: '07:52', who: 'standup-runner', cls: 'agent', msg: 'blocker flagged → tagged ops, added to blockers list' },
-        { t: '08:05', who: 'standup-runner', cls: 'agent', msg: 'dev-marta hasn’t replied — sent a reminder' },
+        { t: '08:05', who: 'standup-runner', cls: 'agent', msg: 'no reply from dev-marta yet, sending a reminder' },
         { t: '08:31', who: 'dev-marta', cls: 'dev', msg: 'posts a screenshot of the new dashboard' },
         { t: '08:31', who: 'standup-runner', cls: 'tool', msg: '⚙ analyzing screenshot… matches DASH-77 acceptance criteria' },
-        { t: '08:32', who: 'standup-runner', cls: 'tool', msg: '⚙ git activity since yesterday: 14 commits · 2 PRs — consistent with updates' },
-        { t: '08:32', who: 'standup-runner', cls: 'result', msg: '✓ report published to team-reports — 1 blocker · 2 on-track · 1 needs-review' }
+        { t: '08:32', who: 'standup-runner', cls: 'tool', msg: '⚙ git activity since yesterday: 14 commits · 2 PRs, consistent with updates' },
+        { t: '08:32', who: 'standup-runner', cls: 'result', msg: '✓ report published to team-reports: 1 blocker · 2 on-track · 1 needs-review' }
       ];
 
       const term = document.getElementById('term');
