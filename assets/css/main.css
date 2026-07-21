@@ -213,7 +213,7 @@ body::after {
   margin-bottom: 2.5rem;
 }
 .hero-lede strong { color: var(--text-1); font-weight: 600; }
-.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3.5rem; }
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.1rem; }
 
 .btn {
   display: inline-flex;
@@ -237,6 +237,33 @@ body::after {
 }
 .btn-primary:hover { background: #5ff7b6; border-color: #5ff7b6; }
 .btn-ghost:hover { border-color: var(--accent-line); color: var(--accent); }
+
+/* Hero Upwork strip */
+.upwork-strip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.8rem 1.25rem;
+  border: 1px solid var(--accent-line);
+  background: var(--accent-dim);
+  margin-bottom: 3.5rem;
+}
+.upwork-strip .upwork-logo {
+  width: 20px;
+  height: auto;
+  flex-shrink: 0;
+  fill: var(--accent);
+}
+.upwork-strip a { transition: color 0.2s; }
+.upwork-strip a:hover { color: var(--accent); }
+.upwork-strip .arrow { color: var(--accent); }
+.upwork-strip .upwork-sep { color: var(--text-3); }
 
 /* Hero status strip */
 .status-strip {
@@ -907,7 +934,7 @@ a.work-card-link { position: absolute; inset: 0; z-index: 1; }
 .reveal-4 { transition-delay: 0.32s; }
 
 /* Hero load-in (no observer needed) */
-.hero .kicker, .hero h1, .hero-lede, .hero-actions, .hero .status-strip {
+.hero .kicker, .hero h1, .hero-lede, .hero-actions, .hero .upwork-strip, .hero .status-strip {
   opacity: 0;
   transform: translateY(18px);
   animation: rise 0.8s cubic-bezier(0.2, 0.6, 0.2, 1) forwards;
@@ -915,13 +942,14 @@ a.work-card-link { position: absolute; inset: 0; z-index: 1; }
 .hero h1 { animation-delay: 0.1s; }
 .hero-lede { animation-delay: 0.22s; }
 .hero-actions { animation-delay: 0.34s; }
-.hero .status-strip { animation-delay: 0.46s; }
+.hero .upwork-strip { animation-delay: 0.44s; }
+.hero .status-strip { animation-delay: 0.54s; }
 @keyframes rise { to { opacity: 1; transform: none; } }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
-  .js .reveal, .hero .kicker, .hero h1, .hero-lede, .hero-actions, .hero .status-strip { opacity: 1; transform: none; }
+  .js .reveal, .hero .kicker, .hero h1, .hero-lede, .hero-actions, .hero .upwork-strip, .hero .status-strip { opacity: 1; transform: none; }
 }
 
 /* ---------- Responsive ---------- */
@@ -937,6 +965,8 @@ a.work-card-link { position: absolute; inset: 0; z-index: 1; }
   .about-photo { max-width: 200px; }
   .stats-row { grid-template-columns: 1fr 1fr; }
   .status-strip { grid-template-columns: 1fr 1fr; }
+  .upwork-strip { gap: 0.7rem 1.4rem; }
+  .upwork-strip .upwork-sep { display: none; }
   .status-cell .value { white-space: normal; }
   .status-cell { border-bottom: 1px solid var(--line); }
   .status-cell:nth-child(even) { border-right: 0; }
